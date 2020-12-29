@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 html{
-	font-size: 62,5%;
+	font-size: 1rem;
 }
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -55,13 +55,12 @@ header .logo-container {
 	padding: 20px;
 }
 header img {
-	width: 120 px;
+	width: 300px;
 	}
-
 	/*******************	MENU NAVIGAZIONE **************/
 
 nav {
-	background-color: #3f5f61;
+	background-color: #83C750;
 	padding: 10px;
 	}
 nav ul
@@ -202,33 +201,36 @@ width: 70%;
 	display: inline-block;
   font-size: 1rem;
 }
-
-
+ 
 @media only screen and (min-width: 992px) {
 
+header .logo-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 nav li a {
 		transition: background .3s;
 	}
+nav li a :hover, nav li a .active {
+	background-color: #0d9b75;
+	border-radius: 3px;
+}
+
 #gallery .item {
 	transition: opacity .3s;
 }
+
 #gallery .item:hover {
 opacity: .7;
 	 }
   }
 
-@media only screen and (max-width: 767px) {
-	body {
-#gallery.item:nth-last-child(2n + 1){
+@media only screen and (max-width: 767px) 
+{
+	 
+	#gallery .item:nth-last-child(2n + 1){
 	clear: left;
 	}
+
  }
-
-
-
-
-
-
-
-
-
